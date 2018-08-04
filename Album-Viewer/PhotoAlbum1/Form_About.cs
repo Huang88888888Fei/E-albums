@@ -13,12 +13,12 @@ namespace PhotoAlbumViewOfTheGods
         public Form_About()
         {
             InitializeComponent();
-            this.Text = String.Format("关于 {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("版本 {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            //this.Text = String.Format("关于 {0}", AssemblyTitle);
+            //this.labelProductName.Text = AssemblyProduct;
+            //this.labelVersion.Text = String.Format("版本 {0}", AssemblyVersion);
+            //this.labelCopyright.Text = AssemblyCopyright;
+            //this.labelCompanyName.Text = AssemblyCompany;
+            //this.textBoxDescription.Text = AssemblyDescription;
         }
 
         #region 程序集特性访问器

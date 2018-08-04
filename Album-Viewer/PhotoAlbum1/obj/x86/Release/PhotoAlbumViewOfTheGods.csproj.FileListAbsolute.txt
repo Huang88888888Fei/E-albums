@@ -11,3 +11,4 @@ C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Release\Ph
 C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Release\PhotoAlbumViewOfTheGods.csproj.GenerateResource.Cache
 C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Release\PhotoAlbum1.exe
 C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Release\PhotoAlbum1.pdb
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Release\PhotoAlbumViewOfTheGods.csprojResolveAssemblyReference.cache
