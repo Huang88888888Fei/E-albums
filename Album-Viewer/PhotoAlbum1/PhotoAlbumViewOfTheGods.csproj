@@ -186,6 +186,8 @@
     <Content Include="bolt.ico" />
     <Content Include="Resources\image-not-found.png" />
     <None Include="Resources\zeus4.jpg" />
+    <Content Include="Resources\rotateLeft.jpg" />
+    <Content Include="Resources\rotateRight.jpg" />
     <Content Include="zeus.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -73,8 +73,6 @@ namespace PhotoAlbumViewOfTheGods
         /// http://social.msdn.microsoft.com/Forums/en-US/csharpgeneral/thread/eb80fbbe-6b89-4c3d-9ede-88a2b105c714/
         /// David
         /// </summary>
-        /// <param name="o"></param>
-        /// <param name="e"></param>
         private static void PrintImage(object o, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Bitmap img = new Bitmap(printImagePath);
@@ -93,7 +91,12 @@ namespace PhotoAlbumViewOfTheGods
             int totalRemoved = 0;
             System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
             List<AllImagesInfo> _allImageInfo = getAllImageInfo();
-            foreach(string photoPath in Directory.GetFiles(Directory.GetCurrentDirectory() + "\\Photos","*.*",SearchOption.AllDirectories).Where(s=>s.EndsWith(".jpg",true,ci) || s.EndsWith(".png",true,ci) || s.EndsWith(".jpeg",true,ci) || s.EndsWith(".gif",true,ci) || s.EndsWith(".bmp",true,ci)))
+            foreach (string photoPath in Directory.GetFiles(Directory.GetCurrentDirectory() + "\\Photos", "*.*", SearchOption.AllDirectories).
+                Where(s => s.EndsWith(".jpg", true, ci) ||
+                s.EndsWith(".png", true, ci) ||
+                s.EndsWith(".jpeg", true, ci) ||
+                s.EndsWith(".gif", true, ci) ||
+                s.EndsWith(".bmp", true, ci)))
             {
                 if (!_allImageInfo.Exists(x => x.path == photoPath))
                 {
@@ -108,8 +111,10 @@ namespace PhotoAlbumViewOfTheGods
                         {
                             throw new Exception("File path does not exist!!");
                         }
-                    }catch(Exception e){
-                        System.Windows.Forms.MessageBox.Show("An error has occurred trying to remove photos. " + e.Message,"Error",System.Windows.Forms.MessageBoxButtons.OK,System.Windows.Forms.MessageBoxIcon.Error);
+                    }
+                    catch (Exception e)
+                    {
+                        System.Windows.Forms.MessageBox.Show("An error has occurred trying to remove photos. " + e.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                     }
                 }
             }
@@ -127,7 +132,7 @@ namespace PhotoAlbumViewOfTheGods
             List<string> users = Directory.GetDirectories(usersDirectory).ToList();
             for (int i = 0; i < users.Count; i++)
             {
-                users[i] = users[i].Replace(usersDirectory+"\\", "");
+                users[i] = users[i].Replace(usersDirectory + "\\", "");
             }
             users.Sort();
             return users;
@@ -149,11 +154,11 @@ namespace PhotoAlbumViewOfTheGods
                 {
                     xdoc = XDocument.Load(album);
                     var Albums = from AlbumInfo in xdoc.Descendants("AlbumInfo")
-                    select new
-                    {
-                        Header = AlbumInfo.Attribute("name").Value,
-                        Children = AlbumInfo.Descendants("PictureInfo")
-                    };
+                                 select new
+                                 {
+                                     Header = AlbumInfo.Attribute("name").Value,
+                                     Children = AlbumInfo.Descendants("PictureInfo")
+                                 };
 
                     foreach (var albumInfo in Albums)
                     {
@@ -261,7 +266,8 @@ namespace PhotoAlbumViewOfTheGods
         /// <returns>True/false depending on whether image is acceptable</returns>
         public static bool isValidString(string text)
         {
-            return (System.Text.RegularExpressions.Regex.IsMatch(text, "^[a-zA-Z0-9_ -]+$")) ? true : false;
+            //return true;
+            return (System.Text.RegularExpressions.Regex.IsMatch(text, "^[\u4e00-\u9fa5a-zA-Z0-9_ -]+$")) ? true : false;
         }
 
         /// <summary>
@@ -333,6 +339,6 @@ namespace PhotoAlbumViewOfTheGods
             }
             return (Image)b;
         }
-         
+
     }
 }

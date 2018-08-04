@@ -39,9 +39,10 @@
             // 
             // button_Create
             // 
-            this.button_Create.Location = new System.Drawing.Point(91, 52);
+            this.button_Create.Location = new System.Drawing.Point(136, 72);
+            this.button_Create.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Create.Name = "button_Create";
-            this.button_Create.Size = new System.Drawing.Size(75, 22);
+            this.button_Create.Size = new System.Drawing.Size(112, 30);
             this.button_Create.TabIndex = 2;
             this.button_Create.Text = "Create";
             this.button_Create.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // button_Cancel
             // 
             this.button_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button_Cancel.Location = new System.Drawing.Point(185, 52);
+            this.button_Cancel.Location = new System.Drawing.Point(278, 72);
+            this.button_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Cancel.Name = "button_Cancel";
-            this.button_Cancel.Size = new System.Drawing.Size(69, 22);
+            this.button_Cancel.Size = new System.Drawing.Size(104, 30);
             this.button_Cancel.TabIndex = 3;
             this.button_Cancel.Text = "Cancel";
             this.button_Cancel.UseVisualStyleBackColor = true;
@@ -60,34 +62,37 @@
             // 
             // textBox_AlbumName
             // 
-            this.textBox_AlbumName.Location = new System.Drawing.Point(91, 26);
+            this.textBox_AlbumName.Location = new System.Drawing.Point(136, 36);
+            this.textBox_AlbumName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_AlbumName.MaxLength = 100;
             this.textBox_AlbumName.Name = "textBox_AlbumName";
-            this.textBox_AlbumName.Size = new System.Drawing.Size(163, 20);
+            this.textBox_AlbumName.Size = new System.Drawing.Size(242, 28);
             this.textBox_AlbumName.TabIndex = 1;
             // 
             // label_AlbumName
             // 
             this.label_AlbumName.AutoSize = true;
-            this.label_AlbumName.Location = new System.Drawing.Point(21, 29);
+            this.label_AlbumName.Location = new System.Drawing.Point(32, 40);
+            this.label_AlbumName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_AlbumName.Name = "label_AlbumName";
-            this.label_AlbumName.Size = new System.Drawing.Size(67, 13);
+            this.label_AlbumName.Size = new System.Drawing.Size(98, 18);
             this.label_AlbumName.TabIndex = 3;
             this.label_AlbumName.Text = "Album Name";
             // 
             // Form_NewFileDialog
             // 
             this.AcceptButton = this.button_Create;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button_Cancel;
-            this.ClientSize = new System.Drawing.Size(287, 96);
+            this.ClientSize = new System.Drawing.Size(430, 133);
             this.Controls.Add(this.label_AlbumName);
             this.Controls.Add(this.textBox_AlbumName);
             this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.button_Create);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_NewFileDialog";
@@ -95,6 +100,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "New Album";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_NewFileDialog_FormClosing);
+            this.Load += new System.EventHandler(this.Form_NewFileDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

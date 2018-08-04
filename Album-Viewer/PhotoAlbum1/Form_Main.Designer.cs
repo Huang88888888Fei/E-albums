@@ -37,16 +37,6 @@
             this.removeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.printImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyImageToAnotherAlbumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel_PictureData = new System.Windows.Forms.Panel();
-            this.button_RenamePic = new System.Windows.Forms.Button();
-            this.label_NameError = new System.Windows.Forms.Label();
-            this.label_picSize = new System.Windows.Forms.Label();
-            this.richTextBox_Description = new System.Windows.Forms.RichTextBox();
-            this.textBox_Name = new System.Windows.Forms.TextBox();
-            this.label_Description = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.contextMenuStrip_Tree = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem_AlbumName = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,6 +82,18 @@
             this.panelLeft = new System.Windows.Forms.Panel();
             this.treeView_Albums = new System.Windows.Forms.TreeView();
             this.label_TreeHelp = new System.Windows.Forms.Label();
+            this.panel_PictureData = new System.Windows.Forms.Panel();
+            this.panel_description = new System.Windows.Forms.Panel();
+            this.richTextBox_Description = new System.Windows.Forms.RichTextBox();
+            this.label_Description = new System.Windows.Forms.Label();
+            this.panel_pictureInfo = new System.Windows.Forms.Panel();
+            this.button_RenamePic = new System.Windows.Forms.Button();
+            this.label_NameError = new System.Windows.Forms.Label();
+            this.label_picSize = new System.Windows.Forms.Label();
+            this.textBox_Name = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl_List = new System.Windows.Forms.TabControl();
             this.tab_Thumnail = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -103,11 +105,13 @@
             this.label_PictureTree = new System.Windows.Forms.Label();
             this.treeView_Pictures = new System.Windows.Forms.TreeView();
             this.contextMenuStrip_Picture.SuspendLayout();
-            this.panel_PictureData.SuspendLayout();
             this.contextMenuStrip_Tree.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelLeft.SuspendLayout();
+            this.panel_PictureData.SuspendLayout();
+            this.panel_description.SuspendLayout();
+            this.panel_pictureInfo.SuspendLayout();
             this.tabControl_List.SuspendLayout();
             this.tab_Thumnail.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -167,123 +171,6 @@
             this.copyImageToAnotherAlbumToolStripMenuItem.Name = "copyImageToAnotherAlbumToolStripMenuItem";
             this.copyImageToAnotherAlbumToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
             this.copyImageToAnotherAlbumToolStripMenuItem.Text = "Copy Image to";
-            // 
-            // panel_PictureData
-            // 
-            this.panel_PictureData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_PictureData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_PictureData.Controls.Add(this.button_RenamePic);
-            this.panel_PictureData.Controls.Add(this.label_NameError);
-            this.panel_PictureData.Controls.Add(this.label_picSize);
-            this.panel_PictureData.Controls.Add(this.richTextBox_Description);
-            this.panel_PictureData.Controls.Add(this.textBox_Name);
-            this.panel_PictureData.Controls.Add(this.label_Description);
-            this.panel_PictureData.Controls.Add(this.label3);
-            this.panel_PictureData.Controls.Add(this.label2);
-            this.panel_PictureData.Controls.Add(this.label1);
-            this.panel_PictureData.Enabled = false;
-            this.panel_PictureData.Location = new System.Drawing.Point(-78, 649);
-            this.panel_PictureData.Margin = new System.Windows.Forms.Padding(4);
-            this.panel_PictureData.Name = "panel_PictureData";
-            this.panel_PictureData.Size = new System.Drawing.Size(1259, 153);
-            this.panel_PictureData.TabIndex = 5;
-            // 
-            // button_RenamePic
-            // 
-            this.button_RenamePic.Enabled = false;
-            this.button_RenamePic.Location = new System.Drawing.Point(465, 53);
-            this.button_RenamePic.Margin = new System.Windows.Forms.Padding(4);
-            this.button_RenamePic.Name = "button_RenamePic";
-            this.button_RenamePic.Size = new System.Drawing.Size(168, 64);
-            this.button_RenamePic.TabIndex = 8;
-            this.button_RenamePic.Text = "Update Info";
-            this.toolTip1.SetToolTip(this.button_RenamePic, "Save Name and Description");
-            this.button_RenamePic.UseVisualStyleBackColor = true;
-            this.button_RenamePic.Click += new System.EventHandler(this.RenamePic_Click);
-            // 
-            // label_NameError
-            // 
-            this.label_NameError.AutoSize = true;
-            this.label_NameError.ForeColor = System.Drawing.Color.DarkRed;
-            this.label_NameError.Location = new System.Drawing.Point(482, 7);
-            this.label_NameError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_NameError.Name = "label_NameError";
-            this.label_NameError.Size = new System.Drawing.Size(179, 18);
-            this.label_NameError.TabIndex = 12;
-            this.label_NameError.Text = "Name already exists";
-            this.label_NameError.Visible = false;
-            // 
-            // label_picSize
-            // 
-            this.label_picSize.AutoSize = true;
-            this.label_picSize.Location = new System.Drawing.Point(64, 107);
-            this.label_picSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_picSize.Name = "label_picSize";
-            this.label_picSize.Size = new System.Drawing.Size(35, 18);
-            this.label_picSize.TabIndex = 10;
-            this.label_picSize.Text = "X Y";
-            // 
-            // richTextBox_Description
-            // 
-            this.richTextBox_Description.Location = new System.Drawing.Point(642, 29);
-            this.richTextBox_Description.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox_Description.Name = "richTextBox_Description";
-            this.richTextBox_Description.Size = new System.Drawing.Size(601, 112);
-            this.richTextBox_Description.TabIndex = 9;
-            this.richTextBox_Description.Text = "";
-            this.richTextBox_Description.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox_Description_KeyPress);
-            // 
-            // textBox_Name
-            // 
-            this.textBox_Name.AcceptsReturn = true;
-            this.textBox_Name.Location = new System.Drawing.Point(70, 53);
-            this.textBox_Name.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Name.Name = "textBox_Name";
-            this.textBox_Name.Size = new System.Drawing.Size(385, 28);
-            this.textBox_Name.TabIndex = 7;
-            this.textBox_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Name_KeyDown);
-            this.textBox_Name.Leave += new System.EventHandler(this.textBox_Name_Leave_1);
-            // 
-            // label_Description
-            // 
-            this.label_Description.AutoSize = true;
-            this.label_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Description.Location = new System.Drawing.Point(886, 3);
-            this.label_Description.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Description.Name = "label_Description";
-            this.label_Description.Size = new System.Drawing.Size(109, 25);
-            this.label_Description.TabIndex = 3;
-            this.label_Description.Text = "Description";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 107);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Size";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 53);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Picture Info";
             // 
             // imageList1
             // 
@@ -361,7 +248,7 @@
             this.buttonHideTree.Location = new System.Drawing.Point(264, 0);
             this.buttonHideTree.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHideTree.Name = "buttonHideTree";
-            this.buttonHideTree.Size = new System.Drawing.Size(20, 565);
+            this.buttonHideTree.Size = new System.Drawing.Size(20, 602);
             this.buttonHideTree.TabIndex = 27;
             this.buttonHideTree.TabStop = false;
             this.buttonHideTree.Text = "<";
@@ -402,10 +289,10 @@
             this.toolStripStatusLabel_UserA,
             this.toolStripStatusLabel_AlbumA,
             this.toolStripStatusLabel_PhotosA});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 599);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 636);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1200, 28);
+            this.statusStrip1.Size = new System.Drawing.Size(1258, 28);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
@@ -605,7 +492,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -621,7 +508,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1200, 34);
+            this.menuStrip1.Size = new System.Drawing.Size(1258, 34);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -633,7 +520,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 34);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(284, 565);
+            this.panelLeft.Size = new System.Drawing.Size(284, 602);
             this.panelLeft.TabIndex = 26;
             // 
             // treeView_Albums
@@ -643,7 +530,7 @@
             this.treeView_Albums.Location = new System.Drawing.Point(0, 64);
             this.treeView_Albums.Margin = new System.Windows.Forms.Padding(4);
             this.treeView_Albums.Name = "treeView_Albums";
-            this.treeView_Albums.Size = new System.Drawing.Size(264, 501);
+            this.treeView_Albums.Size = new System.Drawing.Size(264, 538);
             this.treeView_Albums.TabIndex = 26;
             this.treeView_Albums.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView_Albums_NodeMouseClick);
             this.treeView_Albums.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView_Albums_NodeMouseDoubleClick);
@@ -661,6 +548,142 @@
             this.label_TreeHelp.Text = "\r\nAvailable Albums";
             this.label_TreeHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel_PictureData
+            // 
+            this.panel_PictureData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_PictureData.Controls.Add(this.panel_description);
+            this.panel_PictureData.Controls.Add(this.panel_pictureInfo);
+            this.panel_PictureData.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_PictureData.Enabled = false;
+            this.panel_PictureData.Location = new System.Drawing.Point(284, 483);
+            this.panel_PictureData.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_PictureData.Name = "panel_PictureData";
+            this.panel_PictureData.Size = new System.Drawing.Size(974, 153);
+            this.panel_PictureData.TabIndex = 29;
+            // 
+            // panel_description
+            // 
+            this.panel_description.Controls.Add(this.richTextBox_Description);
+            this.panel_description.Controls.Add(this.label_Description);
+            this.panel_description.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_description.Location = new System.Drawing.Point(576, 0);
+            this.panel_description.Name = "panel_description";
+            this.panel_description.Size = new System.Drawing.Size(396, 151);
+            this.panel_description.TabIndex = 10;
+            // 
+            // richTextBox_Description
+            // 
+            this.richTextBox_Description.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox_Description.Location = new System.Drawing.Point(0, 25);
+            this.richTextBox_Description.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox_Description.Name = "richTextBox_Description";
+            this.richTextBox_Description.Size = new System.Drawing.Size(396, 126);
+            this.richTextBox_Description.TabIndex = 11;
+            this.richTextBox_Description.Text = "";
+            // 
+            // label_Description
+            // 
+            this.label_Description.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Description.Location = new System.Drawing.Point(0, 0);
+            this.label_Description.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Description.Name = "label_Description";
+            this.label_Description.Size = new System.Drawing.Size(396, 25);
+            this.label_Description.TabIndex = 3;
+            this.label_Description.Text = "Description";
+            this.label_Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_pictureInfo
+            // 
+            this.panel_pictureInfo.Controls.Add(this.button_RenamePic);
+            this.panel_pictureInfo.Controls.Add(this.label_NameError);
+            this.panel_pictureInfo.Controls.Add(this.label_picSize);
+            this.panel_pictureInfo.Controls.Add(this.textBox_Name);
+            this.panel_pictureInfo.Controls.Add(this.label3);
+            this.panel_pictureInfo.Controls.Add(this.label2);
+            this.panel_pictureInfo.Controls.Add(this.label1);
+            this.panel_pictureInfo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_pictureInfo.Location = new System.Drawing.Point(0, 0);
+            this.panel_pictureInfo.Name = "panel_pictureInfo";
+            this.panel_pictureInfo.Size = new System.Drawing.Size(576, 151);
+            this.panel_pictureInfo.TabIndex = 7;
+            // 
+            // button_RenamePic
+            // 
+            this.button_RenamePic.Enabled = false;
+            this.button_RenamePic.Location = new System.Drawing.Point(389, 57);
+            this.button_RenamePic.Margin = new System.Windows.Forms.Padding(4);
+            this.button_RenamePic.Name = "button_RenamePic";
+            this.button_RenamePic.Size = new System.Drawing.Size(168, 64);
+            this.button_RenamePic.TabIndex = 17;
+            this.button_RenamePic.Text = "Update Info";
+            this.button_RenamePic.UseVisualStyleBackColor = true;
+            this.button_RenamePic.Click += new System.EventHandler(this.RenamePic_Click);
+            // 
+            // label_NameError
+            // 
+            this.label_NameError.AutoSize = true;
+            this.label_NameError.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_NameError.Location = new System.Drawing.Point(386, 14);
+            this.label_NameError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_NameError.Name = "label_NameError";
+            this.label_NameError.Size = new System.Drawing.Size(179, 18);
+            this.label_NameError.TabIndex = 19;
+            this.label_NameError.Text = "Name already exists";
+            this.label_NameError.Visible = false;
+            // 
+            // label_picSize
+            // 
+            this.label_picSize.AutoSize = true;
+            this.label_picSize.Location = new System.Drawing.Point(64, 111);
+            this.label_picSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_picSize.Name = "label_picSize";
+            this.label_picSize.Size = new System.Drawing.Size(35, 18);
+            this.label_picSize.TabIndex = 18;
+            this.label_picSize.Text = "X Y";
+            // 
+            // textBox_Name
+            // 
+            this.textBox_Name.AcceptsReturn = true;
+            this.textBox_Name.Location = new System.Drawing.Point(70, 57);
+            this.textBox_Name.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Name.Multiline = true;
+            this.textBox_Name.Name = "textBox_Name";
+            this.textBox_Name.Size = new System.Drawing.Size(300, 28);
+            this.textBox_Name.TabIndex = 16;
+            this.textBox_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Name_KeyDown);
+            this.textBox_Name.Leave += new System.EventHandler(this.textBox_Name_Leave_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 111);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 18);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Size";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 18);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(4, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Picture Info";
+            // 
             // tabControl_List
             // 
             this.tabControl_List.Controls.Add(this.tab_Thumnail);
@@ -670,8 +693,8 @@
             this.tabControl_List.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl_List.Name = "tabControl_List";
             this.tabControl_List.SelectedIndex = 0;
-            this.tabControl_List.Size = new System.Drawing.Size(916, 565);
-            this.tabControl_List.TabIndex = 27;
+            this.tabControl_List.Size = new System.Drawing.Size(974, 449);
+            this.tabControl_List.TabIndex = 32;
             this.tabControl_List.TabStop = false;
             // 
             // tab_Thumnail
@@ -681,7 +704,7 @@
             this.tab_Thumnail.Margin = new System.Windows.Forms.Padding(4);
             this.tab_Thumnail.Name = "tab_Thumnail";
             this.tab_Thumnail.Padding = new System.Windows.Forms.Padding(4);
-            this.tab_Thumnail.Size = new System.Drawing.Size(908, 533);
+            this.tab_Thumnail.Size = new System.Drawing.Size(966, 417);
             this.tab_Thumnail.TabIndex = 0;
             this.tab_Thumnail.Text = "Thumbnail";
             this.tab_Thumnail.UseVisualStyleBackColor = true;
@@ -697,8 +720,9 @@
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 525);
+            this.panel1.Size = new System.Drawing.Size(958, 409);
             this.panel1.TabIndex = 2;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // panel2
             // 
@@ -745,13 +769,13 @@
             // 
             // tab_List
             // 
-            this.tab_List.Controls.Add(this.label_PictureTree);
             this.tab_List.Controls.Add(this.treeView_Pictures);
+            this.tab_List.Controls.Add(this.label_PictureTree);
             this.tab_List.Location = new System.Drawing.Point(4, 28);
             this.tab_List.Margin = new System.Windows.Forms.Padding(4);
             this.tab_List.Name = "tab_List";
             this.tab_List.Padding = new System.Windows.Forms.Padding(4);
-            this.tab_List.Size = new System.Drawing.Size(966, 490);
+            this.tab_List.Size = new System.Drawing.Size(966, 417);
             this.tab_List.TabIndex = 1;
             this.tab_List.Text = "List";
             this.tab_List.UseVisualStyleBackColor = true;
@@ -759,8 +783,9 @@
             // label_PictureTree
             // 
             this.label_PictureTree.AutoSize = true;
+            this.label_PictureTree.Dock = System.Windows.Forms.DockStyle.Top;
             this.label_PictureTree.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_PictureTree.Location = new System.Drawing.Point(21, 14);
+            this.label_PictureTree.Location = new System.Drawing.Point(4, 4);
             this.label_PictureTree.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_PictureTree.Name = "label_PictureTree";
             this.label_PictureTree.Size = new System.Drawing.Size(240, 25);
@@ -770,23 +795,26 @@
             // treeView_Pictures
             // 
             this.treeView_Pictures.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView_Pictures.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView_Pictures.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeView_Pictures.Location = new System.Drawing.Point(4, 36);
+            this.treeView_Pictures.Location = new System.Drawing.Point(4, 29);
             this.treeView_Pictures.Margin = new System.Windows.Forms.Padding(4);
             this.treeView_Pictures.Name = "treeView_Pictures";
-            this.treeView_Pictures.Size = new System.Drawing.Size(1234, 533);
-            this.treeView_Pictures.TabIndex = 0;
+            this.treeView_Pictures.Size = new System.Drawing.Size(958, 384);
+            this.treeView_Pictures.TabIndex = 3;
+            this.treeView_Pictures.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView_Pictures_NodeMouseClick);
+            this.treeView_Pictures.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.treeView_Pictures_MouseDoubleClick);
             // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 627);
+            this.ClientSize = new System.Drawing.Size(1258, 664);
             this.Controls.Add(this.tabControl_List);
+            this.Controls.Add(this.panel_PictureData);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panel_PictureData);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -795,14 +823,16 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Main_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip_Picture.ResumeLayout(false);
-            this.panel_PictureData.ResumeLayout(false);
-            this.panel_PictureData.PerformLayout();
             this.contextMenuStrip_Tree.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panelLeft.ResumeLayout(false);
+            this.panel_PictureData.ResumeLayout(false);
+            this.panel_description.ResumeLayout(false);
+            this.panel_pictureInfo.ResumeLayout(false);
+            this.panel_pictureInfo.PerformLayout();
             this.tabControl_List.ResumeLayout(false);
             this.tab_Thumnail.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -818,25 +848,14 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_Picture;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem1;
-        //private System.Windows.Forms.Button button_View;
-        private System.Windows.Forms.Panel panel_PictureData;
-        private System.Windows.Forms.Label label_Description;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox_Description;
-        private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Label label_picSize;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_Tree;
         private System.Windows.Forms.ToolStripMenuItem openAlbumToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem deleteAlbumToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog_Load;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColorDialog colorDialog_Background;
-        private System.Windows.Forms.Label label_NameError;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_Rename;
-        private System.Windows.Forms.Button button_RenamePic;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_AlbumName;
         private System.Windows.Forms.ToolStripMenuItem fileNameToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator_Picture;
@@ -878,6 +897,18 @@
         private System.Windows.Forms.Label label_TreeHelp;
         private System.Windows.Forms.TreeView treeView_Albums;
         private System.Windows.Forms.Button buttonHideTree;
+        private System.Windows.Forms.Panel panel_PictureData;
+        private System.Windows.Forms.Panel panel_description;
+        private System.Windows.Forms.RichTextBox richTextBox_Description;
+        private System.Windows.Forms.Label label_Description;
+        private System.Windows.Forms.Panel panel_pictureInfo;
+        private System.Windows.Forms.Button button_RenamePic;
+        private System.Windows.Forms.Label label_NameError;
+        private System.Windows.Forms.Label label_picSize;
+        private System.Windows.Forms.TextBox textBox_Name;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl_List;
         private System.Windows.Forms.TabPage tab_Thumnail;
         private System.Windows.Forms.Panel panel1;
