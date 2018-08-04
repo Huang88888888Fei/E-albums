@@ -296,8 +296,6 @@ namespace PhotoAlbumViewOfTheGods
         /// Go to previous image in the picture list
         /// Brandon
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void buttonPrevImage_Click(object sender, EventArgs e)
         {
             saveModifiedImage();
@@ -313,8 +311,6 @@ namespace PhotoAlbumViewOfTheGods
         /// Go to next image in the picture list
         /// Brandon
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void buttonNextImage_Click(object sender, EventArgs e)
         {
             saveModifiedImage();
@@ -330,8 +326,6 @@ namespace PhotoAlbumViewOfTheGods
         /// Toggle slideshow start and end
         /// Brandon
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void buttonSlideShow_Click(object sender, EventArgs e)
         {
             if (!slideshowTimer.Enabled)
