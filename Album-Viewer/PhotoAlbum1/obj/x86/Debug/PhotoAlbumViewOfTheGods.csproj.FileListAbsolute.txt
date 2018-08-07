@@ -1,0 +1,14 @@
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\bin\Debug\PhotoAlbum1.exe
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\bin\Debug\PhotoAlbum1.pdb
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.csprojResolveAssemblyReference.cache
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Form_About.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Form_Main.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Form_NewFileDialog.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Form_NewUser.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Form_Search.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Form_Viewer.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Properties.Resources.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.Resources.Resource1.resources
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbumViewOfTheGods.csproj.GenerateResource.Cache
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbum1.exe
+C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\obj\x86\Debug\PhotoAlbum1.pdb

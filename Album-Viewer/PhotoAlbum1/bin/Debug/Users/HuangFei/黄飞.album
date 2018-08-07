@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Album>
+  <AlbumInfo name="C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\bin\Debug\Users\HuangFei\黄飞.album">
+    <PictureInfo id="000" path="C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\bin\Debug\Photos\(R}4`3X1L}B0OST2BW)}W`5.jpg" name="黄飞和老师" description="" md5="36af23e099f135d2186547d31ebc4cd8" dateAdded="1533361964" dateModified="1533364440" />
+    <PictureInfo id="001" path="C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\bin\Debug\Photos\@I09`DC2PGX1QFUD5Q}OPBA.jpg" name="三个老师" description="" md5="8533275eeddd94d33527a230cfeed14a" dateAdded="1533361964" dateModified="1533364464" />
+    <PictureInfo id="002" path="C:\Users\11294\Source\Repos\E-albums\Album-Viewer\PhotoAlbum1\bin\Debug\Photos\[`3Q%_{CK8]WR}MF%(KJ{40.jpg" name="周凌志" description="" md5="ad025389f9d63bbe3e1f6439db1bbf00" dateAdded="1533361964" dateModified="1533361964" />
+  </AlbumInfo>
+</Album>
